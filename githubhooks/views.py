@@ -5,8 +5,7 @@ import json
 @csrf_exempt
 def index(request):
     if request.method == 'POST':
-        request_body = request.body.decode('utf-8');
-        print request_body
+        request_body = request.body.decode('utf-8')
         body = json.loads(request_body)
         print body
         return HttpResponse(json.dumps(body), content_type="application/json")
