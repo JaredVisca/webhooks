@@ -9,6 +9,5 @@ def index(request):
         print request_body
         body = json.loads(request_body)
         print body
-        content = body['content']
-        return HttpResponse(json.dumps(content), content_type="application/json")
+        return HttpResponse(json.dumps(body), content_type="application/json")
     return HttpResponse("This message is because the request.method is not a POST.")
