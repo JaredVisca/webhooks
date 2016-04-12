@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 import json
 
-#what's going to happen this time
+#wooo it worked! let's see if this only builds develop project in Jenkins
 @csrf_exempt
 def index(request):
     if request.method == 'POST':
