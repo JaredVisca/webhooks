@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 import json
 
-#comment!
+#what's going to happen this time
 @csrf_exempt
 def index(request):
     if request.method == 'POST':
